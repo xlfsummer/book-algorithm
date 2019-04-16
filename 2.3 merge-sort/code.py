@@ -17,8 +17,6 @@ def merge(A, p, q, r):
     for i in range(q, r): # q .. r-1
         R.append(A[i])
     R.append(float("inf"))
-    print(L)
-    print(R)
     iL = 0
     iR = 0
     for i in range(p, r):
