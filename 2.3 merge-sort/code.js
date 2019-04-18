@@ -1,17 +1,14 @@
 function sort(A){
-    divideConquer(A, 0, A.length)
+    mergeSort(A, 0, A.length)
 }
 
-function divideConquer(A, p, r){
+function mergeSort(A, p, r){
     let q = Math.floor((p + r) / 2);
     if(p < q){
-        divideConquer(A, p, q);
-        divideConquer(A, q, r);
-        return merge(A, p, q, r);
-    }else{
-        return;
+        mergeSort(A, p, q);
+        mergeSort(A, q, r);
+        merge(A, p, q, r);
     }
-
 }
 
 function merge(A, p, q, r){

@@ -1,11 +1,11 @@
 def sort(A):
-    divideAndConquer(A, 0, len(A))
+    mergeSort(A, 0, len(A))
 
-def divideAndConquer(A, p, r):
+def mergeSort(A, p, r):
     q = (p + r) // 2
     if q > p:
-        divideAndConquer(A, p, q)
-        divideAndConquer(A, q, r)
+        mergeSort(A, p, q)
+        mergeSort(A, q, r)
         merge(A, p, q, r)
 
 def merge(A, p, q, r):
