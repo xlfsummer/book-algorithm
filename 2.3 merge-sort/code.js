@@ -39,7 +39,8 @@ function merge(A, p, q, r){
 
 }
 
+module.exports = sort;
 
-let A = [9, 21, 213, 32, 45, 8,7 , 3423, 78, 53, 4, 1, 3]
-sort(A)
-console.log(A);
+// let A = [9, 21, 213, 32, 45, 8,7 , 3423, 78, 53, 4, 1, 3]
+// sort(A)
+// console.log(A);

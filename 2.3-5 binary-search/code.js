@@ -3,11 +3,11 @@ function search(value, A){
 }
 
 function binarySearch(value, A, start, end){
-    console.log(...arguments);
+    // console.log(...arguments);
 
     let mid = Math.floor((start + end)/2);
     let midValue = A[mid];
-    console.log("midvalue: ", midValue);
+    // console.log("midvalue: ", midValue);
     
     if (start == mid){
         if (A[start] == value)
@@ -15,7 +15,7 @@ function binarySearch(value, A, start, end){
         else
             return null;
     }
-    
+
     else if (midValue > value){
         return binarySearch(value, A, start, mid);
     }
@@ -24,7 +24,8 @@ function binarySearch(value, A, start, end){
     }
 }
 
+// let A = [1, 4, 6, 12, 13, 56, 31, 43, 59, 61, 142, 742, 2351, 3213]
+// let result = search(12, A);
+// console.log("result: ", result);
 
-let A = [1, 4, 6, 12, 13, 56, 31, 43, 59, 61, 142, 742, 2351, 3213]
-let result = search(12, A);
-console.log("result: ", result);
+module.exports = search;
