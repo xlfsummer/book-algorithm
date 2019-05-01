@@ -33,4 +33,7 @@ $\therefore y=\sum^{n-(i+2)+1}_{j=0}{a_{i+j+1}x^{j}}$
 $y=\sum^{n-(i+1)}_{k=0}={a_{k+i+1}x^{k}}$
 
 3. Terminalization  
-循环结束时 $$
+循环退出时 $i=-1$  
+代入得 $y=\sum^{n-(-1+1)}_{k=0}{a_{k+-1+1}x^k}$  
+$y=\sum^{n}_{k=0}{a_{k}x^k}$  
+得证
