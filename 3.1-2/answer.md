@@ -11,9 +11,8 @@ $$
     \leftrightarrow&\forall(n>|2a|)(-1/2\le\frac{a}{n}\le1)\\
     \leftrightarrow&\forall(n>|2a|)(-n/2 \le a\le n)\land n>0\\
     \leftrightarrow&\forall(n>|2a|)(n \ge -2a \land n \ge a)\\
-    \leftrightarrow&\forall(n>|2a|)(n > |2a| \ge -2a \land n > |2a| > |a| \ge a)
-    \\
-     \leftrightarrow&T
+    \leftrightarrow&\forall(n>|2a|)(n > |2a| \ge -2a \land n > |2a| > |a| \ge a)\\
+    \leftrightarrow&T
 \end{aligned}
 $$
 
